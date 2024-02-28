@@ -1,4 +1,6 @@
 import { Routes, Route, Outlet, Link } from "react-router-dom";
+import Home from "./pages/home-page";
+import Footer from "./components/footer";
 
 export default function App() {
   return (
@@ -32,7 +34,7 @@ function Layout() {
         <div className="p-4 bg-slate-500 w-1/2">
           <Link to="/">Company Logo</Link>
         </div>
-
+          <div className="flex justify-end w-full">
         <div className="p-4 hover:border-b-4">
           <Link to="/">Home</Link>
         </div>
@@ -48,6 +50,7 @@ function Layout() {
         <div className="p-4 hover:border-b-4">
           <Link to="/nothing-here">Login</Link>
         </div>
+        </div>
       </nav>
 
       <hr />
@@ -56,17 +59,13 @@ function Layout() {
           so you can think about this <Outlet> as a placeholder for
           the child routes we defined above. */}
       <Outlet />
+
+        <Footer/>
     </div>
   );
 }
 
-function Home() {
-  return (
-    <div>
-      <h2>Home</h2>
-    </div>
-  );
-}
+
 
 function About() {
   return (
