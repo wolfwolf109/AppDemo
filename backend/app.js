@@ -4,10 +4,10 @@ const User = require("./user-model");
 const dbConnect = require("./db-connect");
 const express = require('express')
 const app = express()
+const port = 3000
 
 // execute database connection 
 dbConnect();
-
 
 app.post("/register", (request, response) => {
     bcrypt.hash(request.body.password, 10)
@@ -36,3 +36,7 @@ app.post("/register", (request, response) => {
             });
         })
 });
+
+app.listen(port, () => {
+    console.log(`App Demo listening on port ${port}`)
+  })
