@@ -6,7 +6,7 @@ const express = require('express')
 const app = express()
 const jwt = require("jsonwebtoken");
 const auth = require("./auth");
-const port = 3000
+const port = 3001
 
 
 
