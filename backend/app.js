@@ -4,7 +4,11 @@ const User = require("./user-model");
 const dbConnect = require("./db-connect");
 const express = require('express')
 const app = express()
+const jwt = require("jsonwebtoken");
 const port = 3000
+
+app.use(express.json()) // for parsing application/json
+app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
 
 // execute database connection 
 dbConnect();
@@ -36,6 +40,17 @@ app.post("/register", (request, response) => {
             });
         })
 });
+
+app.post('/login', (req, res)=> {
+    User.findOne({email: req.body.email})
+    .then()
+    .catch((e)=> {
+        res.status(404).send({
+            message: "Email not found",
+            e,
+        })
+    })
+})
 
 app.listen(port, () => {
     console.log(`App Demo listening on port ${port}`)
