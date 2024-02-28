@@ -1,5 +1,5 @@
 const bcrypt = require("bcrypt");
-const User = require("./userModel");
+const User = require("./user-model");
 // require database connection 
 const dbConnect = require("./db-connect");
 const express = require('express')
