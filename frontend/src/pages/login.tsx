@@ -44,7 +44,7 @@ export default function Login() {
 
             <div className=" w-0 md:w-1/2 bg-cover bg-center" style={{ backgroundImage: `url('./login-bg.jpg')`, backgroundSize: "cover" }}></div>
 
-            <form className="bg-white w-full h-full z-40 border-l-2 md:w-1/2" >
+            <form className="min-h-[600px] bg-white w-full h-full z-40 border-l-2 md:w-1/2" >
 
 
                 <div className="p-5 m-auto relative ">
