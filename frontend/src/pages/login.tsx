@@ -34,6 +34,11 @@ export default function Login() {
         .catch(e => window.alert(e))
     }
 
+    const handleRegister = (e: MouseEvent<HTMLButtonElement>) => {
+        e.preventDefault()
+        window.alert("Function not yet implemented!")
+    }
+
     return (
         <div className="min-h-[600px] w-full flex" >
 
@@ -57,7 +62,7 @@ export default function Login() {
                     </div>
                     <div className="flex flex-row">
                     <button onClick={e => handleSubmit(e)} className="ml-5 mb-3 transition bg-gradient-to-r from-cyan-500 to-blue-500 text-white w-full rounded-lg h-16 hover:from-sky-500 hover:to-indigo-500" type="submit">Sign In</button>
-                    <button className="ml-5 transition bg-gradient-to-r from-purple-500 to-pink-500 text-white w-full rounded-lg h-16 hover:from-violet-500 hover:to-fuchsia-500" type="submit">Register</button>
+                    <button onClick={e => handleRegister(e)} className="ml-5 transition bg-gradient-to-r from-purple-500 to-pink-500 text-white w-full rounded-lg h-16 hover:from-violet-500 hover:to-fuchsia-500" type="submit">Register</button>
                     </div>
                     
                 </div>
