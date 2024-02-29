@@ -1,6 +1,8 @@
 import { Routes, Route, Outlet, Link } from "react-router-dom";
 import Home from "./pages/home-page";
 import Footer from "./components/footer";
+import Layout from "./components/layout";
+import Login from "./pages/login";
 
 export default function App() {
   return (
@@ -14,6 +16,7 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="dashboard" element={<Dashboard />} />
+          <Route path="login" element={<Login />} />
 
           {/* Using path="*"" means "match anything", so this route
                 acts like a catch-all for URLs that we don't have explicit
@@ -25,45 +28,7 @@ export default function App() {
   );
 }
 
-function Layout() {
-  return (
-    <div >
-      {/* A "layout route" is a good place to put markup you want to
-          share across all the pages on your site, like navigation. */}
-      <nav className="sticky top-0 bg-sky-950 flex flex-row h-20 p-3 text-white" >
-        <div className="p-4 bg-slate-500 w-1/2">
-          <Link to="/">Company Logo</Link>
-        </div>
-          <div className="flex justify-end w-full">
-        <div className="p-4 hover:border-b-4">
-          <Link to="/">Home</Link>
-        </div>
-        <div className="p-4 hover:border-b-4">
-          <Link to="/about">About Us</Link>
-        </div>
-        <div className="p-4 hover:border-b-4">
-          <Link to="/dashboard">Events and News</Link>
-        </div>
-        <div className="p-4 hover:border-b-4">
-          <Link to="/nothing-here">Contact Us</Link>
-        </div>
-        <div className="p-4 hover:border-b-4">
-          <Link to="/nothing-here">Login</Link>
-        </div>
-        </div>
-      </nav>
 
-      <hr />
-
-      {/* An <Outlet> renders whatever child route is currently active,
-          so you can think about this <Outlet> as a placeholder for
-          the child routes we defined above. */}
-      <Outlet />
-
-        <Footer/>
-    </div>
-  );
-}
 
 
 
