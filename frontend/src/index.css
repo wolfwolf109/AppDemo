@@ -580,11 +580,6 @@ video {
   margin: auto;
 }
 
-.mx-5 {
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
-}
-
 .my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
@@ -592,10 +587,6 @@ video {
 
 .mb-3 {
   margin-bottom: 0.75rem;
-}
-
-.mr-5 {
-  margin-right: 1.25rem;
 }
 
 .ml-5 {
@@ -699,11 +690,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-blue-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
-}
-
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -726,10 +712,6 @@ video {
 
 .to-pink-500 {
   --tw-gradient-to: #ec4899 var(--tw-gradient-to-position);
-}
-
-.to-fuchsia-500 {
-  --tw-gradient-to: #d946ef var(--tw-gradient-to-position);
 }
 
 .bg-cover {
@@ -808,16 +790,6 @@ code {
   border-bottom-width: 4px;
 }
 
-.hover\:bg-white:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-sky-500:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(14 165 233 / var(--tw-bg-opacity));
-}
-
 .hover\:from-sky-500:hover {
   --tw-gradient-from: #0ea5e9 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(14 165 233 / 0) var(--tw-gradient-to-position);
@@ -830,12 +802,12 @@ code {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.hover\:to-indigo-500:hover {
-  --tw-gradient-to: #6366f1 var(--tw-gradient-to-position);
-}
-
 .hover\:to-fuchsia-500:hover {
   --tw-gradient-to: #d946ef var(--tw-gradient-to-position);
+}
+
+.hover\:to-indigo-500:hover {
+  --tw-gradient-to: #6366f1 var(--tw-gradient-to-position);
 }
 
 .focus\:border-blue-300:focus {
@@ -855,8 +827,20 @@ code {
 }
 
 @media (min-width: 768px) {
+  .md\:static {
+    position: static;
+  }
+
+  .md\:top-0 {
+    top: 0px;
+  }
+
   .md\:m-4 {
     margin: 1rem;
+  }
+
+  .md\:block {
+    display: block;
   }
 
   .md\:flex {
@@ -877,5 +861,17 @@ code {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:bg-current {
+    background-color: currentColor;
+  }
+
+  .md\:bg-transparent {
+    background-color: transparent;
+  }
+
+  .md\:hover\:border-b-4:hover {
+    border-bottom-width: 4px;
   }
 }

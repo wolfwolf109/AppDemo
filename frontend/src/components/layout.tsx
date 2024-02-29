@@ -16,11 +16,11 @@ export default function Layout() {
                     <Link to="/">Company Logo</Link>
                 </div>
 
-                <div className="absolute right-3 top-7 text-center hover:bg-white md:hidden " onClick={switchMenu}>
+                <button className="transition absolute right-3 top-7 text-center hover:-translate-y-1 md:hidden" onClick={switchMenu}>
                     <i className="fa fa-bars"></i>
-                </div>
+                </button>
 
-                <div className={(isMenuOpen ? "flex  absolute top-20 bg-sky-900" : "hidden ") + " flex-col md:m-4 md:flex md:flex-row justify-end w-full"}>
+                <div className={(isMenuOpen ? "flex absolute top-20 bg-sky-900 md:static md:bg-transparent" : "hidden ") + " flex-col md:m-4 md:flex md:flex-row justify-end w-full"}>
 
                     <Link className="transition hover:-translate-y-1 p-4 hover:border-b-4" to="/">Home</Link>
 
@@ -34,7 +34,7 @@ export default function Layout() {
                     <Link className="transition hover:-translate-y-1 p-4 hover:border-b-4" to="/nothing-here">Contact Us</Link>
 
 
-                    <Link className="transition hover:-translate-y-1 p-4 hover:border-b-4" to="/login">Login</Link>
+                    <Link className="transition hover:-translate-y-1 p-4 md:hover:border-b-4" to="/login">Login</Link>
 
                 </div>
             </nav>
