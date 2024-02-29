@@ -3,7 +3,7 @@
 export default function Footer() {
 
     return (
-        <footer className="bg-sky-950 text-white flex  flex-col absolute w-full bottom-0 px-11 text-center md:flex-row ">
+        <footer className="bg-sky-950 text-white flex  flex-col w-full px-11 text-center md:flex-row ">
             <div className="flex flex-col items-center max-md:border-b-2 p-4 md:w-1/3">
                 <h1>Contact Us</h1>
                 <div>Email: appDemo@demo.com</div>

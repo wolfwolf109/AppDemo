@@ -8,7 +8,7 @@ export default function Layout() {
     function switchMenu() { SetIsMenuOpen(!isMenuOpen) }
 
     return (
-        <div className="overflow-hidden">
+        <div className="overflow-hidden ">
             {/* A "layout route" is a good place to put markup you want to
             share across all the pages on your site, like navigation. */}
             <nav className="sticky top-0 bg-sky-950 flex flex-row h-20 text-white z-50" >
