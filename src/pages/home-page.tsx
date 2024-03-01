@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import DisplayBar from "../components/display-bar";
+import DisplayGallery from "../components/display-gallery";
 
 
 export default function Home() {
@@ -48,7 +48,7 @@ export default function Home() {
         <iframe className="w-full p-5 md:basis-2/3" src="https://www.youtube.com/embed/jNQXAC9IVRw?si=h80uraeNCPPfh1-K" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
       </div>
 
-      <DisplayBar/>
+      <DisplayGallery/>
     </div>
   );
 }
