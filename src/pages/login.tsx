@@ -112,7 +112,7 @@ export default function Login() {
 
 
                     <button onClick={handlePopUpClose} className="w-full text-right">
-                        <i className="  fa-solid fa-circle-xmark"></i>
+                        <i className=" fa-solid fa-circle-xmark"></i>
                     </button>
                     <h1 className="text-3xl">Register</h1>
                     <br></br>
