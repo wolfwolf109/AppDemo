@@ -11,9 +11,9 @@ export default function Layout() {
         <div className="overflow-hidden ">
             {/* A "layout route" is a good place to put markup you want to
             share across all the pages on your site, like navigation. */}
-            <nav className=" shadow-lg top-0 bg-gradient-to-r from-blue-800 to-cyan-400 flex flex-row items-center h-20 text-white z-50" >
+            <nav className=" shadow-lg top-0 bg-gradient-to-r from-blue-800 to-cyan-400 flex flex-row  h-20 text-white z-40" >
                 <div className="m-4 p-4  w-1/2">
-                    <Link to="/">Company Logo</Link>
+                    <Link to="/">App Demo</Link>
                 </div>
 
                 <button className="transition absolute right-3 top-7 text-center hover:-translate-y-1 md:hidden" onClick={switchMenu}>
