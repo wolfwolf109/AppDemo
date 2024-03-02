@@ -1,8 +1,10 @@
 import { Routes, Route, Outlet, Link } from "react-router-dom";
-import Home from "./pages/home-page";
+import Home from "./pages/home";
 import Footer from "./components/footer";
 import Layout from "./components/layout";
 import Login from "./pages/login";
+import About from "./pages/about";
+import Contact from "./pages/contact";
 
 export default function App() {
   return (
@@ -15,7 +17,7 @@ export default function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
-          <Route path="dashboard" element={<Dashboard />} />
+          <Route path="contact" element={<Contact />} />
           <Route path="login" element={<Login />} />
 
           {/* Using path="*"" means "match anything", so this route
@@ -32,13 +34,6 @@ export default function App() {
 
 
 
-function About() {
-  return (
-    <div>
-      <h2>About</h2>
-    </div>
-  );
-}
 
 function Dashboard() {
   return (
