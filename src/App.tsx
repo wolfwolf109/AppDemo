@@ -1,10 +1,10 @@
 import { Routes, Route, Outlet, Link } from "react-router-dom";
 import Home from "./pages/home";
-import Footer from "./components/footer";
 import Layout from "./components/layout";
 import Login from "./pages/login";
 import About from "./pages/about";
 import Contact from "./pages/contact";
+import Construction from "./components/construction";
 
 export default function App() {
   return (
@@ -23,22 +23,9 @@ export default function App() {
           {/* Using path="*"" means "match anything", so this route
                 acts like a catch-all for URLs that we don't have explicit
                 routes for. */}
-          <Route path="*" element={<NoMatch />} />
+          <Route path="*" element={<Construction />} />
         </Route>
       </Routes>
-    </div>
-  );
-}
-
-
-
-
-
-
-function Dashboard() {
-  return (
-    <div>
-      <h2>Dashboard</h2>
     </div>
   );
 }
