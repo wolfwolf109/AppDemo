@@ -28,7 +28,7 @@ export default function Layout() {
                     <Link className="transition hover:-translate-y-1 p-4 hover:border-b-4" to="/about">About Us</Link>
 
 
-                    <Link className="transition hover:-translate-y-1 p-4 hover:border-b-4" to="/dashboard">Events and News</Link>
+                    <Link className="transition hover:-translate-y-1 p-4 hover:border-b-4" to="/events">Events and News</Link>
 
 
                     <Link className="transition hover:-translate-y-1 p-4 hover:border-b-4" to="/contact">Contact Us</Link>
