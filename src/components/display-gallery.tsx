@@ -29,7 +29,7 @@ export default function DisplayGallery() {
                     freeMode={true}
                     loop={true}
                     autoplay={{
-                        delay: 10000,
+                        delay: 2500,
                         disableOnInteraction: false,
                       }}
                     modules={[FreeMode, Autoplay]}
