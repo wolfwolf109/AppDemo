@@ -5,6 +5,7 @@ import Login from "./pages/login";
 import About from "./pages/about";
 import Contact from "./pages/contact";
 import Construction from "./components/construction";
+import Events from "./pages/events";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="login" element={<Login />} />
+          <Route path="events" element={<Events />} />
 
           {/* Using path="*"" means "match anything", so this route
                 acts like a catch-all for URLs that we don't have explicit

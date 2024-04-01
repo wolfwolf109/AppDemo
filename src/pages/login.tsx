@@ -35,7 +35,7 @@ export default function Login() {
 
     const handleSubmit = (e: MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
-        axios.post('https://bookish-barnacle-p5jwj4jjp9p36745-3001.app.github.dev/login', loginForm)
+        axios.post('https://app-demo-backend.onrender.com/login', loginForm)
             .then((res) => {
                 window.alert(res.data.message)
                 document.cookie = `login_token=${res.data.token}`
@@ -54,7 +54,7 @@ export default function Login() {
             return;
         }
 
-        axios.post('https://bookish-barnacle-p5jwj4jjp9p36745-3001.app.github.dev/register', registerForm)
+        axios.post('https://app-demo-backend.onrender.com/register', registerForm)
         .then((res) => {
             window.alert(res.data.message)
             document.cookie = `login_token=${res.data.token}`
